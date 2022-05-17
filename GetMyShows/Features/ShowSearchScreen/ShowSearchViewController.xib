@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowSearchViewController" customModule="GetMyShows" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="nHW-kg-Wfn" id="4cl-MN-N7T"/>
+                <outlet property="tableView" destination="V9I-7O-drb" id="32G-tF-n66"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nHW-kg-Wfn">
+                    <rect key="frame" x="0.0" y="44" width="390" height="51"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V9I-7O-drb">
+                    <rect key="frame" x="0.0" y="95" width="390" height="749"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="nHW-kg-Wfn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Be-Ve-lfp"/>
+                <constraint firstItem="V9I-7O-drb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="A9C-4r-vpK"/>
+                <constraint firstItem="V9I-7O-drb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gB7-gd-4Ha"/>
+                <constraint firstItem="V9I-7O-drb" firstAttribute="top" secondItem="nHW-kg-Wfn" secondAttribute="bottom" id="jZx-Hk-vEI"/>
+                <constraint firstItem="nHW-kg-Wfn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nxS-5a-aw9"/>
+                <constraint firstAttribute="bottom" secondItem="V9I-7O-drb" secondAttribute="bottom" id="u1G-7d-AxT"/>
+                <constraint firstItem="nHW-kg-Wfn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wff-kc-wfN"/>
+            </constraints>
+            <point key="canvasLocation" x="-589" y="149"/>
+        </view>
+    </objects>
+</document>

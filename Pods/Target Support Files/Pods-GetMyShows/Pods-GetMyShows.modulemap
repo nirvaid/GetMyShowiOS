@@ -1,0 +1,6 @@
+framework module Pods_GetMyShows {
+  umbrella header "Pods-GetMyShows-umbrella.h"
+
+  export *
+  module * { export * }
+}
